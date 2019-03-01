@@ -1,7 +1,7 @@
 ## String클래스
 
 >일반적으로 문자열 데이터에 사용하는 String은 알고보니 클래스라고 한다 아래의 예시로 동작을 알아보자.
-```
+```java
 String str = "JAVA";
 System.out.println("str : " + str);
 str = str + "_8";
@@ -17,7 +17,7 @@ String 클래스를 이용하여 문자열을 변경하면 기존에 JAVA가 존
 이 과정은 사람이 느낄만큼은 아니지만 다량의 데이터를 다룬다면 매우 비효율적이며 **주소값도 바뀌게 된다.**
 
 위의 코드에 
-```
+```java
 System.out.println("str : " + str.hashCode());
 ```
 코드를 앞뒤로 추가해보면 눈에보이게 알 수 있을것이다.
@@ -26,7 +26,7 @@ System.out.println("str : " + str.hashCode());
 
 >이러한 Stirng클래스의 단점을 보완한 것이 바로 StringBuffer와 StringBuillder라고 한다. 이 둘의 차이점은 나중에 설명하도록 한다.
 
-```
+```java
 StringBuffer sf = new StringBuffer("Python");
 System.out.println("sf : " + sf);
 sf.append("_8");
@@ -47,7 +47,7 @@ StringBuillder는 Stirng과 어떤부분이 다르다는 것인가. 이미 눈�
 소멸시키지 않고도 문자열을 추가할 수 있다는 점이다. 
 
 잘 모르겠다면 이역시도
-```
+```java
 System.out.println("sf : " + sf.hashCode());
 ```
 코드를 추가해보면 알 수 있다. sf.append()와 sf.insert()로 추가하고도 같은 주소값을 유지한다.
