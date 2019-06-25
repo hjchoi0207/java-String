@@ -1,6 +1,6 @@
 ## String클래스
 
->일반적으로 문자열 데이터에 사용하는 String은 알고보니 클래스라고 한다 아래의 예시로 동작을 알아보자.
+>일반적으로 문자열 데이터에 사용하는 String은 원래 클래스라고 한다 아래의 예시로 동작을 알아보자.
 ```java
 String str = "JAVA";
 System.out.println("str : " + str);
